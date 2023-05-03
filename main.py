@@ -1,7 +1,9 @@
-from controller import *
+from controller import Controller
+from PyQt5.QtWidgets import QApplication
 
 
-def main():
+def main() -> None:
+    """Create and show the main application window."""
     app = QApplication([])
     window = Controller()
     window.show()
